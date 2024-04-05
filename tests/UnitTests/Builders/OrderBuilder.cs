@@ -38,7 +38,6 @@ public class OrderBuilder
         _order = new Order(TestBuyerId, new AddressBuilder().WithDefaultValues(), new List<OrderItem>());
         return _order;
     }
-
     public Order WithItems(List<OrderItem> items)
     {
         _order = new Order(TestBuyerId, new AddressBuilder().WithDefaultValues(), items);
